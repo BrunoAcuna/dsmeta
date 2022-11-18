@@ -5,12 +5,12 @@ import './styles.css';
 function Header() {
     return (
         <header>
-            <div className="dsmeta-logo-container">
-                <img src={logo} alt="DSMeta" />
-                <h1>Acuna Academy</h1>
+            <div className="ProjectAcuna-logo-container">
+                <img src={logo} alt="ProjectAcuna" />
+                <h1>Acuna Systems</h1>
                 <p>
                     Desenvolvido por 
-                    <a href="https://www.instagram.com/devsuperior.ig"> @brunoacn_</a>
+                    <a href="https://www.instagram.com/brunoacn_"> @brunoacn_</a>
                 </p>
             </div>
         </header>

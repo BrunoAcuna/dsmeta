@@ -7,35 +7,35 @@ import { useState } from 'react';
 function SalesCard() {
 
     const min = new Date(new Date().setDate(new Date().getDate() - 365));
-    const max = new Date();
+    const max = new Date()
 
     const [minDate, setMinDate] = useState(min);
     const [maxDate, setMaxDate] = useState(max);
 
     return (
-        <div className="dsmeta-card">
-            <h2 className="dsmeta-sales-title">Vendas</h2>
+        <div className="acuna-card">
+            <h2 className="acuna-sales-title">Vendas</h2>
             <div>
-                <div className="dsmeta-form-control-container">
+                <div className="acuna-form-control-container">
                     <DatePicker
                         selected={minDate}
                         onChange={(date: Date) => setMinDate(date)}
-                        className="dsmeta-form-control"
+                        className="acuna-form-control"
                         dateFormat="dd/MM/yyyy"
                     />
                 </div>
-                <div className="dsmeta-form-control-container">
+                <div className="acuna-form-control-container">
                     <DatePicker
                         selected={maxDate}
                         onChange={(date: Date) => setMaxDate(date)}
-                        className="dsmeta-form-control"
+                        className="acuna-form-control"
                         dateFormat="dd/MM/yyyy"
                     />
                 </div>
             </div>
 
             <div>
-                <table className="dsmeta-sales-table">
+                <table className="acuna-sales-table">
                     <thead>
                         <tr>
                             <th className="show992">ID</th>
@@ -56,7 +56,7 @@ function SalesCard() {
                             <td className="show992">11</td>
                             <td>R$ 55300.00</td>
                             <td>
-                                <div className="dsmeta-red-btn-container">
+                                <div className="acuna-red-btn-container">
                                     <NotificationButton />
                                 </div>
                             </td>
@@ -69,7 +69,7 @@ function SalesCard() {
                             <td className="show992">11</td>
                             <td>R$ 55300.00</td>
                             <td>
-                                <div className="dsmeta-red-btn-container">
+                                <div className="acuna-red-btn-container">
                                     <NotificationButton />
                                 </div>
                             </td>
@@ -82,7 +82,7 @@ function SalesCard() {
                             <td className="show992">11</td>
                             <td>R$ 55300.00</td>
                             <td>
-                                <div className="dsmeta-red-btn-container">
+                                <div className="acuna-red-btn-container">
                                     <NotificationButton />
                                 </div>
                             </td>
